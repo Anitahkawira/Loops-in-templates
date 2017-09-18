@@ -6,5 +6,8 @@ def welcome(request):
      return render(request,'welcome_students.html')
 def students(request):
     students = Student.objects.all()
-    return render(request,'listing_students.html', students)
+    context ={
+        'students':students
+    }
+    return render(request,'listing_students.html', context)
     

@@ -21,6 +21,6 @@ from  firstapp import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('^welcome/$', views.welcome),
-    url('^Student/$', views.Student),
+    url('^students/$', views.students),
 ]
      
